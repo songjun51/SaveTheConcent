@@ -2,7 +2,7 @@
 <resources>
 
     <color name="ColorPrimary">#009688</color>
-    <color name="ColorPrimaryDark">#fff</color>
-    <color name="tabsScrollColor">#ccc</color>
+    <color name="ColorPrimaryDark">#000</color>
+    <color name="tabsScrollColor">#fff</color>
     <color name="co">#009688</color>
 </resources>

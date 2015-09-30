@@ -17,7 +17,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
 
     // Build a Constructor and assign the passed Values to appropriate values in the class
-    public ViewPagerAdapter(FragmentManager fm,CharSequence mTitles[], int mNumbOfTabsumb) {
+    public ViewPagerAdapter(FragmentManager fm, CharSequence mTitles[], int mNumbOfTabsumb) {
         super(fm);
 
         this.Titles = mTitles;
@@ -29,21 +29,25 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
 
-        if(position == 0) // if the position is 0 we are returning the First tab
+        if (position == 0) // if the position is 0 we are returning the First tab
         {
             Tab1 tab1 = new Tab1();
             return tab1;
-        }
-        else if (position == 1)            // As we are having 2 tabs if the position is now 0 it must be 1 so we are returning second tab
+        } else if (position == 1)            // As we are having 2 tabs if the position is now 0 it must be 1 so we are returning second tab
         {
             Tab2 tab2 = new Tab2();
             return tab2;
-        }else{
-            return new Tab1();
+        } else if (position == 2)
+        {
+            Tab3 tab3 = new Tab3();
+            return tab3;
+        } else
+        {
+            Tab4 tab4 = new Tab4();
+            return  tab4;
         }
-
-
     }
+
 
     // This method return the titles for the Tabs in the Tab Strip
 

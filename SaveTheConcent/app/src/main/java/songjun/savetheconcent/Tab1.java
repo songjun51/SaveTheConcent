@@ -28,10 +28,10 @@ public class Tab1 extends Fragment {
         View v =inflater.inflate(R.layout.tab_1,container,false);
 
         arrayList = new ArrayList<>();
-        arrayList.add(new StudentData("asdf","asdf"));
-        arrayList.add(new StudentData("asdf","asdf"));
-        arrayList.add(new StudentData("asdf","asdf"));
-        arrayList.add(new StudentData("asdf","asdf"));
+        arrayList.add(new StudentData("1.은밀한공간","99℃"));
+        arrayList.add(new StudentData("연야","하고싶어요"));
+        arrayList.add(new StudentData("ㅠ","ㅗ"));
+        arrayList.add(new StudentData("ㅁ","ㅂ"));
         DataAdapter adapters = new DataAdapter(v.getContext(), arrayList);
         listview= (ListView)v.findViewById(R.id.listview);
         listview.setAdapter(adapters);

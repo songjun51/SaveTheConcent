@@ -5,25 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     >
-    <!--액션바-->
-    <!--<LinearLayout-->
-        <!--android:background="@color/co"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="56dp"-->
-        <!-->-->
-        <!--&lt;!&ndash;액션바 글&ndash;&gt;-->
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:text="Save The Concent"-->
-            <!--android:textStyle="bold"-->
-            <!--android:layout_marginLeft="25dp"-->
-            <!--android:gravity="center_vertical"-->
-            <!--android:textSize="20dp"-->
-            <!--android:textColor="#fff"-->
-            <!--android:id="@+id/Actionbar"-->
-            <!--/>-->
-    <!--</LinearLayout>-->
     <RelativeLayout
         android:background="#fff"
         android:layout_width="match_parent"
@@ -41,7 +22,8 @@
             >
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -70,20 +52,27 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/safe_pig"
                     android:id="@+id/pig"
-                    android:scaleType="centerInside"
                     android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
                     />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:src="@drawable/nemo"
+                    android:id="@+id/sangte"
+                    android:layout_alignLeft="@id/pig"
                     />
+                </RelativeLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
