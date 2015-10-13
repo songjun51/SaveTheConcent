@@ -1,16 +1,117 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#fff"
+    >
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="You Are In Tab 4"
-        android:id="@+id/textView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:text="설정창"
+        android:textSize="30dp"
+        android:textColor="@color/co"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
 
-</RelativeLayout>
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AEAEAE"
+        android:layout_weight="0.05"
+        ></LinearLayout>
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:background="@color/co"
+        android:layout_weight="0.05"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@color/co">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="콘센트 이름 설정"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textColor="@color/co"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:src="@drawable/safe_on_concents"
+                android:layout_marginLeft="30dp"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="1.거실"
+                android:layout_margin="15dp"
+                android:textSize="35dp"
+                android:textColor="@color/co"
+                android:id="@+id/set1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:src="@drawable/safe_on_concents"
+                android:layout_marginLeft="30dp"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="1.STC-01"
+                android:layout_margin="15dp"
+                android:textSize="35dp"
+                android:textColor="@color/co"
+                android:id="@+id/set2"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:src="@drawable/safe_on_concents"
+                android:layout_marginLeft="30dp"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="1.STC-01"
+                android:layout_margin="15dp"
+                android:textSize="35dp"
+                android:textColor="@color/co"
+                android:id="@+id/set3"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
