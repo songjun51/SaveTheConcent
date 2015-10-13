@@ -37,6 +37,6 @@ public class Tab1 extends Fragment {
         listview.setAdapter(adapters);
 
         return v;
-
     }
+
 }
